@@ -1,3 +1,64 @@
+/**/
+/**/
+/*
+If you want to find the CSS position of a certain section, 
+look at its HTML file structure first (look at their class, tag name, ...),
+then you can search by its class or search by title in the table of contents
+(Press Crtl + F to search).
+*/
+/**/
+/**/
+/* 
+*
+*** Table of contents:
+-- Main color
+-- Reset CSS
+-- Container
+-- Main class used in Rayopay
+
+-- Dark mode
+-- Change main color
+-- Layout
+-- Preload app
+
+-- Components
+----- Bank Select Item
+----- Button Fixed Bottom
+----- Denomination (Choose money: Top Up, Withdraw)
+----- Header Home (home.html)
+----- Header Top (include Page name, icon Back, ...)
+----- Form input
+----- Getting Started(index.html)
+----- Menu bar bottom (Home, Pages, Analys, Voucher, Profile)
+----- Payment List (home.html)
+----- Send Again (home.html)
+----- List Deal (voucher.html)
+----- Input Item
+----- Modal Delete (Pop Up when click icon Delete)
+
+-- App Pages
+----- Bill (Internet, Water, Electric,...)
+----- Analys Page (analys.html)
+----- Verify Page (verify.html)
+----- Voucher Page (voucher.html)
+----- Profile Page
+-------- Button change mode dark/light
+-------- Modal choose color
+----- Change language (setting.html)
+----- Success Page (top-up-success, transfer-success,...)
+----- My QR (my-qr.html)
+----- My Wallet (my-wallet.html)
+----- Transfer by wallet
+----- Transfer by Bank
+----- Payment Security
+----- All Page Voucher
+----- Choose Friend
+----- Scan QR
+
+*
+*/
+
+/* Man color */
 :root {
   --primary: #665AF0;
   --dark: #1A1A2F;
@@ -29,6 +90,8 @@
   --pink: #ED449F;
 }
 
+
+/* Reset CSS: Start */
 html,
 body {
   padding: 0;
@@ -260,6 +323,10 @@ template {
   display: none;
 }
 
+/* Reset CSS: End */
+
+
+/* Container: Start */
 .container {
   max-width: 1700px;
   width: 100%;
@@ -308,6 +375,11 @@ template {
   }
 }
 
+/* Container: End */
+
+
+
+/* Main class used in Rayopay: Start */
 .text-primary {
   color: var(--primary);
 }
@@ -1085,6 +1157,10 @@ template {
   width: 100%;
 }
 
+/* Main class used in Rayopay: End */
+
+
+/* Dark mode: Start */
 body.darkmode {
   background-color: #0D0D23;
   color: var(--white);
@@ -1282,6 +1358,10 @@ body.darkmode .list-sub-color .color-item {
   background-color: #fff;
 }
 
+/* Dark mode: End */
+
+
+/* Change main color: Start */
 body.green-blue .btn-main {
   background-color: var(--green-blue);
 }
@@ -1849,6 +1929,73 @@ body.pink input:focus {
   border: 2px solid var(--pink) !important;
 }
 
+/* Change main color: End */
+
+
+/* Layout: Start */
+#content {
+  background-color: #EEF0F3;
+}
+
+#content .trading-history-block .list-history .bg-img {
+  border-radius: 18px;
+}
+
+body.darkmode #content {
+  background-color: #0D0D23;
+}
+
+/* Layout: End */
+
+
+/* Preload app: Start */
+#preload {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all ease 0.5s;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preload i {
+  font-size: 40px;
+  animation: load 0.8s linear 0s infinite;
+}
+
+#preload.disable {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Preload app: End */
+
+
+/** 
+***
+***
+**** Components: Start
+***
+***
+**/
+
+/* Bank Select Item: Start */
 .bank-select-block .right {
   display: block;
   position: relative;
@@ -1884,6 +2031,10 @@ body.pink input:focus {
   opacity: 0;
 }
 
+/* Bank Select Item: Start */
+
+
+/* Button Fixed Bottom: Start */
 .button-fixed {
   position: fixed;
   width: 100%;
@@ -1891,6 +2042,10 @@ body.pink input:focus {
   height: 70px;
 }
 
+/* Button Fixed Bottom: End */
+
+
+/* Denomination (Choose money: Top Up, Withdraw): Start */
 .denomination-block .list-money .row {
   margin-left: -4px;
   margin-right: -4px;
@@ -1912,6 +2067,10 @@ body.pink input:focus {
   cursor: pointer;
 }
 
+/* Denomination (Choose money: Top Up, Withdraw): End */
+
+
+/* Header Home: Start */
 .header-block {
   height: 200px;
   position: relative;
@@ -1967,6 +2126,10 @@ body.pink input:focus {
   width: 24px;
 }
 
+/* Header Home: End */
+
+
+/* Header Top (include Page name, icon Back, ...): Start */
 .header-main {
   padding: 25px 0;
   position: relative;
@@ -1995,6 +2158,10 @@ body.pink input:focus {
   top: 28px;
 }
 
+/* Header Top (include Page name, icon Back, ...): End */
+
+
+/* Form input: Start */
 .form-input .form-group {
   position: relative;
 }
@@ -2015,11 +2182,37 @@ body.pink input:focus {
   top: 44px;
 }
 
+/* Form input: End */
+
+
+/* Getting Started(index.html): Start */
+.get-start-block .container {
+  height: 100%;
+}
+
+.get-start-block .container .bg-img img {
+  width: 100%;
+}
+
+.get-start-block .container .logo-img {
+  text-align: center;
+  margin-top: 44px;
+}
+
+.get-start-block .container .logo-img img {
+  width: 90px;
+  height: 90px;
+}
+
 .start-desc {
   width: 80%;
   margin: 0 auto;
 }
 
+/* Getting Started(index.html): End */
+
+
+/* Menu bar bottom (Home, Pages, Analys, Voucher, Profile): Start */
 .menu-bar-block {
   position: fixed;
   bottom: 0;
@@ -2064,6 +2257,10 @@ body.pink input:focus {
   stroke: var(--primary);
 }
 
+/* Menu bar bottom (Home, Pages, Analys, Voucher, Profile): End */
+
+
+/* Payment List (home.html): Start */
 .payment-list-block .list {
   flex-wrap: wrap;
   row-gap: 16px;
@@ -2087,6 +2284,10 @@ body.pink input:focus {
   width: 28px;
 }
 
+/* Payment List (home.html): End */
+
+
+/* Send Again (home.html): Start */
 .send-again-block .list-send-again .slick-list {
   overflow: unset;
 }
@@ -2116,6 +2317,10 @@ body.pink input:focus {
   height: 100%;
 }
 
+/* Send Again (home.html): End */
+
+
+/* List Deal (voucher.html): Start */
 .list-deal .slick-track {
   margin-left: -6px;
   margin-right: -8px;
@@ -2142,6 +2347,10 @@ body.pink input:focus {
   background-color: #fff;
 }
 
+/* List Deal (voucher.html): End */
+
+
+/* Input Item: Start */
 .form-input-block .input-block {
   position: relative;
 }
@@ -2159,6 +2368,10 @@ body.pink input:focus {
   font-size: 14px;
 }
 
+/* Input Item: End */
+
+
+/* Modal Delete (Pop Up when click icon Delete): Start */
 #content {
   position: relative;
 }
@@ -2216,59 +2429,78 @@ body.pink input:focus {
   display: block;
 }
 
-.get-start-block .container {
-  height: 100%;
+/* Modal Delete (Pop Up when click icon Delete): End */
+
+/** 
+***
+***
+**** Components: End
+***
+***
+**/
+
+
+/** 
+***
+***
+**** Pages: Start
+***
+***
+**/
+
+/* Bill (Internet, Water, Electric,...): Start */
+.bill-block {
+  height: calc(100vh - 80px - 78px - 70px);
 }
 
-.get-start-block .container .bg-img img {
-  width: 100%;
-}
-
-.get-start-block .container .logo-img {
+.bill-block .desc-block {
+  background: #ffffff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   text-align: center;
-  margin-top: 44px;
+  padding: 52px 0px;
+  border-bottom: 1px dashed #ededed;
 }
 
-.get-start-block .container .logo-img img {
-  width: 90px;
-  height: 90px;
+.bill-block .dashed-line {
+  width: 100%;
+  position: relative;
 }
 
-#preload {
-  position: fixed;
-  z-index: 10000;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: all ease 0.5s;
-  opacity: 1;
-  visibility: visible;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.bill-block .dashed-line::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: -17px;
+  top: -16px;
+  border-radius: 50%;
+  background: #EEF0F3;
 }
 
-#preload i {
-  font-size: 40px;
-  animation: load 0.8s linear 0s infinite;
+.bill-block .dashed-line::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: -17px;
+  top: -16px;
+  border-radius: 50%;
+  background: #EEF0F3;
 }
 
-#preload.disable {
-  opacity: 0;
-  visibility: hidden;
+.bill-block .user-infor {
+  background: #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: center;
+  padding: 32px 24px 28px;
 }
 
-@keyframes load {
-  0% {
-    transform: rotate(0);
-  }
+/* Bill (Internet, Water, Electric,...): End */
 
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
+/* Analys Page (analys.html): Start */
 .total-history-block .container>div {
   padding: 10px 12px;
   width: calc((100% - 16px) / 2);
@@ -2335,66 +2567,10 @@ body.pink input:focus {
   transition: all ease-in-out 0.3s;
 }
 
-.bill-block {
-  height: calc(100vh - 80px - 78px - 70px);
-}
+/* Analys Page (analys.html): Start */
 
-.bill-block .desc-block {
-  background: #ffffff;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  text-align: center;
-  padding: 52px 0px;
-  border-bottom: 1px dashed #ededed;
-}
 
-.bill-block .dashed-line {
-  width: 100%;
-  position: relative;
-}
-
-.bill-block .dashed-line::before {
-  content: "";
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  left: -17px;
-  top: -16px;
-  border-radius: 50%;
-  background: #EEF0F3;
-}
-
-.bill-block .dashed-line::after {
-  content: "";
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  right: -17px;
-  top: -16px;
-  border-radius: 50%;
-  background: #EEF0F3;
-}
-
-.bill-block .user-infor {
-  background: #ffffff;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  text-align: center;
-  padding: 32px 24px 28px;
-}
-
-#content {
-  background-color: #EEF0F3;
-}
-
-#content .trading-history-block .list-history .bg-img {
-  border-radius: 18px;
-}
-
-body.darkmode #content {
-  background-color: #0D0D23;
-}
-
+/* Verify Page (verify.html): Start */
 .verify-block .desc-subtitle span {
   color: var(--on-surface);
 }
@@ -2424,6 +2600,10 @@ body.darkmode #content {
   text-decoration: underline;
 }
 
+/* Verify Page (verify.html): End */
+
+
+/* Voucher Page (voucher.html): Start */
 .list-voucher-block .list-voucher .voucher-item {
   position: relative;
   width: 290px;
@@ -2440,6 +2620,10 @@ body.darkmode #content {
   color: var(--primary);
 }
 
+/* Voucher Page (voucher.html): End */
+
+
+/* Profile Page (profile.html): Start */
 .profile-infor-block .share-item {
   border-bottom: none;
 }
@@ -2450,6 +2634,7 @@ body.darkmode #content {
   height: 68px;
 }
 
+/* Button change mode dark/light: Start */
 .profile-more-infor .container .nav-item:first-child .right-infor label {
   display: block;
   width: 40px;
@@ -2508,6 +2693,10 @@ body.darkmode #content {
   border-bottom: none;
 }
 
+/* Button change mode dark/light: End */
+
+
+/* Modal choose color: Start */
 .choose-color-modal {
   opacity: 0;
   position: fixed;
@@ -2559,6 +2748,9 @@ body.darkmode #content {
   transition: all ease-in-out 0.4s;
 }
 
+/* Modal choose color: End */
+
+
 .profile-navigate .container .nav-item:last-child {
   border-bottom: none;
 }
@@ -2587,6 +2779,11 @@ body.darkmode #content {
   margin-left: 0;
 }
 
+/* Profile Page (profile.html): End */
+
+
+
+/* Change language (setting.html): Start */
 .change-language-block {
   transition: 0.6s;
   transition-delay: 0.2s;
@@ -2654,6 +2851,10 @@ body.darkmode #content {
   transition-delay: 0.2s;
 }
 
+/* Change language (setting.html): End */
+
+
+/* Success Page (top-up-success, transfer-success,...): Start */
 .header-main.style-success {
   z-index: 1;
   position: relative;
@@ -2740,6 +2941,10 @@ body.darkmode #content {
   width: 288px;
 }
 
+/* Success Page (top-up-success, transfer-success,...): End */
+
+
+/* My QR (my-qr.html): Start */
 .qr-block {
   position: relative;
   height: 409px;
@@ -2791,6 +2996,10 @@ body.darkmode #content {
   color: var(--success);
 }
 
+/* My QR (my-qr.html): End */
+
+
+/* My Wallet (my-wallet.html): Start */
 .style-wallet .header-main {
   position: relative;
   z-index: 1;
@@ -2847,6 +3056,10 @@ body.darkmode #content {
   height: 31px;
 }
 
+/* My Wallet (my-wallet.html): End */
+
+
+/* Transfer by wallet: Start */
 #content>.bank-select-block .right {
   transition: all ease 0.5s;
 }
@@ -2923,6 +3136,11 @@ body.darkmode #content {
   height: 100%;
 }
 
+/* Transfer by wallet: End */
+
+
+
+/* Transfer by Bank: Start */
 .bank-block .container,
 .account-block .container {
   position: relative;
@@ -2968,6 +3186,10 @@ body.darkmode #content {
   transition: 0.5s;
 }
 
+/* Transfer by Bank: End */
+
+
+/* Payment Security: Start */
 .payment-security-block .list-page {
   overflow: hidden;
   transition: 0.5s;
@@ -3053,6 +3275,10 @@ body.darkmode #content {
   z-index: 1;
 }
 
+/* Payment Security: End */
+
+
+/* All Page Voucher: Start */
 .top-trending-deals-page,
 .sale-off-page,
 .freeship-page,
@@ -3146,6 +3372,10 @@ body.darkmode #content {
   margin-top: 0 !important;
 }
 
+/* All Page Voucher: End */
+
+
+/* Choose Friend: Start */
 .search-block .send-block input {
   width: calc((100% - 16px - 78px));
 }
@@ -3155,6 +3385,10 @@ body.darkmode #content {
   text-align: center;
 }
 
+/* Choose Friend: End */
+
+
+/* Scan QR: Start */
 #reader {
   height: 100vh;
   position: absolute !important;
@@ -3213,3 +3447,5 @@ body.darkmode #content {
   font-size: 13px;
   color: var(--secondary);
 }
+
+/* Scan QR: End */
