@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Choose Friend</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="./assets/images/fav.png" />
+
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/slick.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/jquery.modal.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-drawer.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+
+</head>
+
+<body>
+  <div class="header-main text-center pb-12">
+    <button type="button" onclick="history.back();"><i class="ph ph-caret-left fs-24 fw-500 text-primary"></i></button>
+    <div class="page-name fs-24 fw-500">Choose Friend</div>
+  </div>
+  <div id="content">
+    <div class="heading-line"></div>
+    <div class="search-block bg-white mt-4">
+      <div class="container-24 h-100 flex-center">
+        <div class="send-block mt-12 pb-12 flex-between gap-12 w-100">
+          <input class="border-border-nor-2px bora-15 bg-surface pt-8 pb-8 pl-16 pr-16 text-secondary" type="text"
+            placeholder="Phone number, name,..." />
+          <button class="bg-primary bora-15 text-white fs-14 pt-8 pb-8 pl-16 pr-16 border-transparent">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="recent-transfer-block pt-12 bg-white">
+      <div class="container-24">
+        <div class="trading-history-heading flex-between pb-4">
+          <div class="letter fs-14 text-white bg-primary bora-5 pt-4 pb-4 pl-9 pr-9 pointer">A</div>
+        </div>
+        <div class="list-history">
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar19.png" alt="Adrian Costa" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Adrian Costa</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar18.png" alt="Adam Smith" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Adam Smith</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar17.png" alt="Alexander" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Alexander</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar16.png" alt="Alex Vidal" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Alex Vidal</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar15.png" alt="Allen David" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Allen David</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar14.png" alt="Allison Becker" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Allison Becker</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recent-transfer-block pt-24 bg-white">
+      <div class="container-24">
+        <div class="trading-history-heading flex-between pb-4">
+          <div class="letter fs-14 text-white bg-primary bora-5 pt-4 pb-4 pl-9 pr-9 pointer">B</div>
+        </div>
+        <div class="list-history">
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar1.png" alt="Brookoly" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Brookoly</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar13.png" alt="Brian Gill" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Brian Gill</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar12.png" alt="Brandon Johnson" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Brandon Johnson</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar11.png" alt="Benjamin Pavard" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Benjamin Pavard</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar10.png" alt="Bella Rodriguez" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Bella Rodriguez</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar9.png" alt="Bethany Georgina" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Bethany Georgina</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar8.png" alt="B. Christina" /></div>
+                <div class="infor ml-12">
+                  <div class="name">B. Christina</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recent-transfer-block pt-24 bg-white pb-80">
+      <div class="container-24">
+        <div class="trading-history-heading flex-between pb-4">
+          <div class="letter fs-14 text-white bg-primary bora-5 pt-4 pb-4 pl-9 pr-9 pointer">C</div>
+        </div>
+        <div class="list-history">
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar.png" alt="Camila Cabello" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Camila Cabello</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar7.png" alt="Carolina Herrera" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Carolina Herrera</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar6.png" alt="Christina Ricci" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Christina Ricci</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar5.png" alt="Christian Eriksen" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Christian Eriksen</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar4.png" alt="Casey Kasem" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Casey Kasem</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line undefined"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar3.png" alt="Chris Evans" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Chris Evans</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+          <div class="share-item pb-12 pt-12 bb-line border-none"><a class="share-item-main flex-between" href="#!">
+              <div class="left-infor d-flex align-items-center">
+                <div class="bg-img bg-white border-primary bora-50 p-4 w-48 h-48"><img class="w-100 h-100"
+                    src="assets/images/avatar/avatar2.png" alt="Claire Forlani" /></div>
+                <div class="infor ml-12">
+                  <div class="name">Claire Forlani</div>
+                  <div class="desc text-secondary mt-4 fs-14 fw-400">505-287-8051</div>
+                </div>
+              </div>
+              <div class="right-infor text-right"><i class="ph ph-caret-right fs-14 text-secondary"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="style-sub">
+    <div class="menu-bar-block bg-white flex-between"><a class="item-link" href="home.html"><img
+          src="assets/images/MenuBar/Home.png" alt="" /><img class="d-none home-img"
+          src="assets/images/MenuBar/HomeMain.png" alt="" /><img class="d-none icon-white"
+          src="assets/images/icons-white/Home - Light 24px.png" alt="" /></a><a class="item-link" href="pages.html"><img
+          src="assets/images/MenuBar/Pages.png" alt="" /><img class="d-none pages-img"
+          src="assets/images/MenuBar/PagesMain.png" alt="" /><img class="d-none pages-img icon-white"
+          src="assets/images/icons-white/Pages - Light 24px.png" alt="" /></a><a class="item-link"
+        href="analys.html"><img src="assets/images/MenuBar/Chart.png" alt="" /><img class="d-none chart-img"
+          src="assets/images/MenuBar/ChartMain.png" alt="" /><img class="d-none chart-img icon-white"
+          src="assets/images/icons-white/Chart - Light 24px.png" alt="" /></a><a class="item-link"
+        href="voucher.html"><img src="assets/images/MenuBar/Discount.png" alt="" /><img class="d-none discount-img"
+          src="assets/images/MenuBar/DiscountMain.png" alt="" /><img class="d-none discount-img icon-white"
+          src="assets/images/icons-white/Discount - Light 24px.png" alt="" /></a><a class="item-link"
+        href="profile.html"><img src="assets/images/MenuBar/Profile.png" alt="" /><img class="d-none profile-img"
+          src="assets/images/MenuBar/ProfileMain.png" alt="" /><img class="d-none profile-img icon-white"
+          src="assets/images/icons-white/Profile - Light 24px.png" alt="" /></a></div>
+  </div>
+  <script src="./assets/js/darkmode.js"></script>
+
+  <script src="./assets/js/jquery-3.7.0.js"></script>
+  <script src="./assets/js/jquery-migrate-3.4.1.js"></script>
+  <script src="./assets/js/parallax.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/jquery.validate.min.js"></script>
+  <script src="./assets/js/jquery.modal.min.js"></script>
+  <script src="./assets/js/bootstrap-drawer.min.js"></script>
+  <script src="./assets/js/jquery.countdown.min.js"></script>
+  <script src="./assets/js/main.min.js"></script>
+  <script src="./assets/js/phosphor-icons.js"></script>
+
+</body>
+
+</html>
